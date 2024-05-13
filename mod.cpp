@@ -1,0 +1,11 @@
+name = "79th Aux Mod LOCAL";
+author = "79th Mod Team";
+picture = "79th-logo.paa";
+logo = "79th-logo.paa";
+logoOver = "79th-logo.paa";
+overview = "79th Legion Addons: Glorified Assets";
+description = "79th Mod Collection";
+tooltip = "79th Mod Pack";
+tooltipOwned = "79th Mod Pack Owned";
+overviewPicture = "79th-logo.paa";
+overviewText = "79th Mod Pack";

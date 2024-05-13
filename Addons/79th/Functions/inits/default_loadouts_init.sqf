@@ -1,0 +1,19 @@
+//-----------Load Outs-----------//
+
+_allLoadOuts = [
+
+//-----79th Recruit-----//
+["79th Recruit", [['212th_3AS_DC15A', '', 'acc_pointer_IR', '3AS_Optic_Red_DC15A', ['212th_3AS_DC15A_Mag', 45], [], ''], [], ['212th_JLTS_DC17SA', '', 'JLTS_DC17SA_flashlight', 'Aux212_holo_optic', ['212th_DC17_Mag', 30], ['JLTS_stun_mag_long', 5], ''], ['79th_Clone_Recruit', [['ACE_wirecutter', 1], ['ACE_EntrenchingTool', 1], ['ACE_Flashlight_MX991', 1], ['ACE_CableTie', 5], ['ACE_EarPlugs', 2], ['ItemcTabHCam', 1], ['ACE_IR_Strobe_Item', 2]]], ['79_Clone_Holster', [['212th_3AS_DC15A_Mag', 9, 45], ['212th_35Rnd_DC17_mag', 2, 30], ['JLTS_stun_mag_long', 3, 5]]], ['79_Clone_Beltbag', [['79th_Stimpack', 3], ['79th_Bacta_Spray', 1], ['ACE_plasmaIV_500', 1], ['ACE_tourniquet', 4], ['ACE_epinephrine', 3], ['ACE_elasticBandage', 15], ['3AS_ThermalDetonator', 2, 1], ['3AS_SonicDet', 2, 1], ['212th_HM1_SmokeGreen', 2, 1], ['212th_HM1_SmokeRed', 3, 1], ['212th_HM1_SmokeWhite', 5, 1], ['JCA_SignalFlare_Green', 2, 1]]], '79_Clone_Helmet_Recruit', '', ['JLTS_CloneBinocular_black', '', '', '', ['Laserbatteries', 1], [], ''], ['ItemMap', 'ItemGPS', 'JLTS_clone_comlink', 'ItemCompass', 'ACE_Altimeter', 'Aux79_NVG_Chip']]],
+
+//-----79th Trooper-----//
+["79th Trooper", [['212th_3AS_DC15S', '', 'acc_pointer_IR', '3AS_optic_holo_DC15S', ['212th_3AS_DC15S_Mag', 60], [], ''], [], ['212th_JLTS_DC17SA', '', 'JLTS_DC17SA_flashlight', 'Aux212_holo_optic', ['212th_DC17_Mag', 30], ['JLTS_stun_mag_long', 5], ''], ['79th_Clone_Trooper', [['ACE_wirecutter', 1], ['ACE_EntrenchingTool', 1], ['ACE_Flashlight_MX991', 1], ['ACE_CableTie', 5], ['ACE_EarPlugs', 2], ['ItemcTabHCam', 1], ['ACE_IR_Strobe_Item', 2]]], ['79_Clone_Holster', [['212th_35Rnd_DC17_mag', 2, 30], ['JLTS_stun_mag_long', 3, 5], ['212th_3AS_DC15S_Mag', 9, 60]]], ['79_Clone_Beltbag', [['79th_Stimpack', 3], ['79th_Bacta_Spray', 1], ['ACE_plasmaIV_500', 1], ['ACE_tourniquet', 4], ['ACE_epinephrine', 3], ['ACE_elasticBandage', 15], ['3AS_ThermalDetonator', 2, 1], ['3AS_SonicDet', 2, 1], ['212th_HM1_SmokeGreen', 2, 1], ['212th_HM1_SmokeRed', 3, 1], ['212th_HM1_SmokeWhite', 5, 1], ['JCA_SignalFlare_Green', 2, 1]]], '79_Clone_Helmet', '', ['JLTS_CloneBinocular_black', '', '', '', ['Laserbatteries', 1], [], ''], ['ItemMap', 'ItemGPS', '', 'ItemCompass', 'ACE_Altimeter', 'Aux79_NVG_Chip']]],
+
+//----- 79th Medic -----//
+["79th Medic", [['212th_3AS_DC15S', '', 'acc_pointer_IR', '3AS_optic_holo_DC15S', ['212th_3AS_DC15S_Mag', 60], [], ''], [], ['212th_JLTS_DC17SA', '', 'JLTS_DC17SA_flashlight', 'Aux212_holo_optic', ['212th_DC17_Mag', 30], ['JLTS_stun_mag_long', 5], ''], ['79th_Clone_Trooper', [['ACE_wirecutter', 1], ['ACE_EntrenchingTool', 1], ['ACE_Flashlight_MX991', 1], ['ACE_CableTie', 5], ['ACE_EarPlugs', 2], ['ItemcTabHCam', 1], ['ACE_IR_Strobe_Item', 2]]], ['79_Clone_Holster', [['212th_35Rnd_DC17_mag', 2, 30], ['JLTS_stun_mag_long', 3, 5], ['212th_3AS_DC15S_Mag', 9, 60]]], ['79_Clone_Backpack_medic', [['79th_Stimpack', 10], ['79th_Bacta_Spray', 5], ['ACE_epinephrine', 5], ['ACE_plasmaIV', 5], ['ACE_plasmaIV_250', 6], ['ACE_plasmaIV_500', 6], ['ACE_splint', 6], ['ACE_tourniquet', 8], ['ACE_bodyBag_blue', 1], ['ACE_adenosine', 2], ['ACE_surgicalKit', 1], ['ACE_elasticBandage', 50], ['JCA_SignalFlare_Green', 2, 1], ['SquadShieldMagazine', 1, 1], ['3AS_ThermalDetonator', 2, 1], ['212th_HM1_SmokePurple', 2, 1], ['212th_HM1_SmokeWhite', 5, 1]]], '79_Clone_Helmet', '', ['JLTS_CloneBinocular_black', '', '', '', ['Laserbatteries', 1], [], ''], ['ItemMap', 'ItemGPS', 'JLTS_clone_comlink', 'ItemCompass', 'ACE_Altimeter', 'Aux79_NVG_Chip']]]
+
+];
+
+//----------LoadOuts End----------//
+
+//-------add loadouts to ace default loadouts------//
+{[_x select 0,_x select 1] call ace_arsenal_fnc_addDefaultLoadout}forEach _allLoadOuts;
